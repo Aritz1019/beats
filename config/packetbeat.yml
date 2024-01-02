@@ -13,4 +13,4 @@ packetbeat.protocols:
     capture_response: true
 
 output.elasticsearch:
-  hosts: "http://${SERVER_IP}:9200"
+  hosts: ["http://${SERVER_IP}:9200"]
