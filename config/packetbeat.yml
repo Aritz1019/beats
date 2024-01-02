@@ -14,4 +14,3 @@ packetbeat.protocols:
 
 output.elasticsearch:
   hosts: "http://${SERVER_IP}:9200"
-  protocol: "http"
