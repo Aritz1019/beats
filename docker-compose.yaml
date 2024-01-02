@@ -1,7 +1,7 @@
 version: '3'
 services:
   metricbeat:
-    image: docker.elastic.co/beats/metricbeat:8.5.3
+    image: docker.elastic.co/beats/metricbeat:8.11.3
     command: metricbeat -e
     environment:
       - SERVER_IP=${SERVER_IP}
@@ -13,7 +13,7 @@ services:
       - /:/hostfs:ro
 
   packetbeat:
-    image: docker.elastic.co/beats/packetbeat:8.5.3
+    image: docker.elastic.co/beats/packetbeat:8.11.3
     command: packetbeat --strict.perms=false -e
     user: packetbeat
     environment:
