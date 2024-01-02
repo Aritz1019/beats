@@ -2,7 +2,7 @@ packetbeat.interfaces.device: any
 
 packetbeat.protocols:
   http:
-    ports: [80, 8080, 8000, 8088, 5000, 8002]
+    ports: [80, 8080, 8000, 8088, 5000, 8002. 18001]
     # Enabling both request and response capture
     capture_request: true
     capture_response: true
