@@ -12,5 +12,5 @@ packetbeat.protocols:
     capture_request: true
     capture_response: true
 
-output.elasticsearch:
-  hosts: ["http://${SERVER_IP}:9200"]
+output.logstash:
+  hosts: ["http://${SERVER_IP}:5044"]
